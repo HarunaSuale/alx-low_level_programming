@@ -44,11 +44,7 @@ char **strtow(char *str)
 	return (words);
 }
 
-/**
- * util - a util function for fetching words into an array
- * @words: the strings array
- * @str: the string
- */
+
 void util(char **words, char *str)
 {
 	int i, j, start, flag;
@@ -76,14 +72,9 @@ void util(char **words, char *str)
 		create_word(words, str, start, i, j);
 }
 
-/**
- * create_word - creates a word and insert it into the array
- * @words: the array of strings
- * @str: the string
- * @start: the starting index of the word
- * @end: the stopping index of the word
- * @index: the index of the array to insert the word
- */
+
+
+
 void create_word(char **words, char *str, int start, int end, int index)
 {
 	int i, j;
