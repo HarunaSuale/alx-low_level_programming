@@ -1,20 +1,16 @@
 #include <stdio.h>
 
-
-/*
- * main- a program to print 
- * number of arguments pass to it
- * Argc and argv concept.
- * return 0 after compilation.
+/**
+ * main - prints the number of arguments passed into it.
+ * @argc: argument count
+ * @argv: arguments
+ *
+ * Return: 0
  */
+int main(int argc, char **argv)
+{
+	(void)argv;
 
-int main(int argc, char**argv){
-
-	(void)argc;
-	printf("%s\n", argc-1);
-	return 0;
-
-	
-
+	printf("%d\n", argc - 1);
+	return (0);
 }
-
