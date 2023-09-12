@@ -1,1 +1,2 @@
-This is a project on the argc and argv concept of c programming. Thank you!
+This is a project on argc and argv
+
