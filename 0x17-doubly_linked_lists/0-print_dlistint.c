@@ -1,27 +1,20 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * print_dlistint - function to print linked list
- * @h: parameter
+ * print_dlistint - print all the elements of a dlistint_t list
+ * @h: pointer to the start of the linked list
+ *
  * Return: number of nodes
  */
-
-
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *ptr = NULL;
-	size_t count = 0;
+	size_t i;
 
-	if (h == NULL)
-		pritf("The linked list is empty\n");
-	ptr = h;
-
-	while (ptr != NULL)
+	for (i = 0; h != NULL; i++)
 	{
-		pritf("%d", ptr->data);
-		ptr = ptr->next;
-		count++;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
-	return (count);
-
+	return (i);
 }
